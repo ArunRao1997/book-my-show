@@ -1,21 +1,23 @@
 package com.scaler.bookmyshow.models;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.util.List;
 
-@Setter
 @Getter
+@Setter
 @Entity
-public class User extends BaseModel {
+public class Theatre extends BaseModel {
 
-    private String username;
+    private String name;
 
-    private String email;
-     
+    @ManyToOne
+    private Region region;
+
     @OneToMany
-    private List<Booking> bookings;
+    private List<Screen> screens;
 }

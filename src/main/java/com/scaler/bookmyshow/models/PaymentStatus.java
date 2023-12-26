@@ -1,2 +1,7 @@
-package com.scaler.bookmyshow.models;public enum PaymentStatus {
+package com.scaler.bookmyshow.models;
+
+public enum PaymentStatus {
+    SUCCESS,
+    FAILURE, 
+    REFUNDED;
 }

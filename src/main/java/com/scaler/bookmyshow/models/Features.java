@@ -1,6 +1,6 @@
 package com.scaler.bookmyshow.models;
 
-public enum Feature {
+public enum Features {
     TWO_D,
     THREE_D,
     IMAX,

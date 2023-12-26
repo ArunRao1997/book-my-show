@@ -1,2 +1,6 @@
-package com.scaler.bookmyshow.models;public enum PaymentProvider {
+package com.scaler.bookmyshow.models;
+
+public enum PaymentProvider {
+    PAYU,
+    RAZORPAY;
 }
